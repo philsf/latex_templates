@@ -1,0 +1,177 @@
+\everymath{\displaystyle}
+%\documentclass[pdftex,a4paper]{article}
+\documentclass[a4paper]{article}
+%%classes: article, report, book, proc, amsproc
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Misc
+% para acertar os acentos
+\usepackage[brazilian]{babel} 
+%\usepackage[portuguese]{babel} 
+% \usepackage[english]{babel}
+% \usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{fullpage}
+% \usepackage{graphicx} %See PDF section
+\usepackage{multicol}
+\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% PDF support
+
+\usepackage[pdftex]{color,graphicx}
+% %% Hyper-refs
+\usepackage[pdftex]{hyperref} % for printing
+% \usepackage[pdftex,bookmarks,colorlinks]{hyperref} % for screen
+
+%% \newif\ifPDF
+%% \ifx\pdfoutput\undefined\PDFfalse
+%% \else\ifnum\pdfoutput > 0\PDFtrue
+%%      \else\PDFfalse
+%%      \fi
+%% \fi
+
+%% \ifPDF
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage{aeguill}
+%%   \usepackage[pdftex]{graphicx,color}
+%%   \usepackage[pdftex]{hyperref}
+%% \else
+%%   \usepackage[T1]{fontenc}
+%%   \usepackage[dvips]{graphicx}
+%%   \usepackage[dvips]{hyperref}
+%% \fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Math
+\usepackage{amsmath,amsfonts,amssymb}
+% para usar R de Real do jeito que o povo gosta
+\usepackage{amsfonts} % \mathbb
+% para usar as letras frescas como L de Espaco das Transf Lineares
+% \usepackage{mathrsfs} % \mathscr
+
+% Oferecer seno e tangente em pt, com os comandos usuais.
+\providecommand{\sin}{} \renewcommand{\sin}{\hspace{2pt}\mathrm{sen}}
+\providecommand{\tan}{} \renewcommand{\tan}{\hspace{2pt}\mathrm{tg}}
+
+% dt of integrals = \ud t
+\newcommand{\ud}{\mathrm{\ d}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% Título e cabeçalho
+\noindent\parbox[c]{.15\textwidth}{\includegraphics[width=.15\textwidth]{logo}}\hfill
+\parbox[c]{.825\textwidth}{\raggedright%
+  \sffamily {\LARGE
+
+Centro Universitário Anhanguera de Niterói -- UNIAN
+
+\par\bigskip}
+{Aluno(a): \underline{\hspace{8.5cm}} RA: \underline{\hspace{2.3cm}}\par}
+{Curso: \underline{\hspace{8.95cm}} Data: \underline{\hspace{2cm}}\par}
+{Turma: \underline{\hspace{2cm}} Série: \underline{\hspace{2cm}}
+  Turno: \underline{\hspace{2.5cm}} Prova A\par}
+{Prof: \underline{\hspace{9.15cm}} Nota: \underline{\hspace{2cm}}\par}
+
+\vspace{10pt}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\large Prova x de DISCIPLINA}
+
+\vspace{10pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+Leia atentamente as questões. Não serão consideradas respostas fora
+dos espaços demarcados para as questões. Questões discursivas só serão
+consideradas com resoluções completas. Questões objetivas só serão
+consideradas no cartão resposta, se houver. Caso seja providenciada
+uma folha de rascunho, entregá-la junto com a prova.
+
+{\bf Não desgrampear a prova.} Não utilizar corretivo tipo {\em
+  Liquid-Paper}.
+
+Somente será permitido material de uso pessoal como lápis, borracha e
+caneta sobre a mesa após o início da avaliação. Não será permitido o
+uso de calculadoras, nem de dispositivos eletrônicos, como celular,
+tablet, etc. A posse ou uso desses aparelhos durante a prova implicará
+na anulação imediata da mesma. O mesmo vale para bolsas, estojos, etc.
+
+\vspace{0.1cm}
+\hrulefill
+\vspace{0.3cm}
+
+(Enunciado geral, se houver)
+\vspace{0.5cm}
+
+% %% linhas de preenchimento em página
+% \underline{\hspace{15cm}}
+% %% linhas de preenchimento em coluna
+% \underline{\hspace{7cm}}
+
+\begin{multicols}{2}
+{\bf Cartão resposta} (preencher a opção)
+
+\begin{tabular}[!b]{|c|c|c|c|c|}
+  \hline
+  1 & A & B & C & D\\
+  \hline
+  2 & A & B & C & D\\
+  \hline
+  3 & A & B & C & D\\
+  \hline
+  4& A & B & C & D\\
+  \hline
+\end{tabular}
+\begin{tabular}[!b]{|c|c|c|c|c|}
+  \hline
+  5 & A & B & C & D\\
+  \hline
+  6 & A & B & C & D\\
+  \hline
+  7& A & B & C & D\\
+  \hline
+  8 & A & B & C & D\\
+  \hline
+\end{tabular}
+
+\begin{enumerate}
+\item (1pt) 
+
+\vspace{2cm}
+\item (1pt) 
+
+\vspace{3cm}
+\item (2pt) 
+
+\vspace{4cm}
+\item  (1pt) 
+
+\vspace{3cm}
+{\ }
+\columnbreak
+
+\item  (1pt) 
+
+\vspace{5cm}
+\item  (2pt) 
+
+%\vspace{8cm}
+
+\vfill
+\end{enumerate}
+\end{multicols}
+\vfill
+\begin{center}Boa prova!\end{center}
+\end{document}
